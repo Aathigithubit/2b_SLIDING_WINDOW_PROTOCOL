@@ -11,6 +11,7 @@ To write a python program to perform sliding window protocol
 5. If your frames reach the server it will send ACK signal to client
 6. Stop the Program
 ## PROGRAM
+```
 CLIENT:
 import socket
 s=socket.socket()
@@ -37,6 +38,7 @@ s.connect(('localhost',8000))
 while True: 
  print(s.recv(1024).decode())
  s.send("acknowledgement recived from the server".encode())
+```
 ## OUPUT
 ![Screenshot (20)](https://github.com/Aathigithubit/2b_SLIDING_WINDOW_PROTOCOL/assets/151421280/487a0bc8-e515-4adb-94de-28b80245767e)
 
